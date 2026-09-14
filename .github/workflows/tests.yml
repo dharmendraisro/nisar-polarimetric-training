@@ -23,7 +23,7 @@ jobs:
           python -m pip install pytest nbformat numpy scipy pandas matplotlib h5py xarray rasterio geopandas psutil pyproj shapely
 
       - name: Run tests
-        run: pytest -q
+        run: pytest -q -p no:cacheprovider
 
       - name: Run static package audit
         run: python tools/audit_package.py
