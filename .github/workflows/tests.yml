@@ -1,0 +1,44 @@
+name: Tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install test dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install pytest nbformat numpy scipy pandas matplotlib h5py xarray rasterio geopandas psutil pyproj shapely
+
+      - name: Run tests
+        run: pytest -q
+
+      - name: Run static package audit
+        run: python tools/audit_package.py
+
+      - name: Validate notebook JSON and code syntax
+        run: |
+          python - <<'PY'
+          import ast
+          import json
+          from pathlib import Path
+          for p in sorted(Path('notebooks').glob('*.ipynb')):
+              data = json.loads(p.read_text(encoding='utf-8'))
+              assert data.get('nbformat', 0) >= 4, p
+              for cell in data.get('cells', []):
+                  if cell.get('cell_type') == 'code':
+                      ast.parse(''.join(cell.get('source', [])), filename=str(p))
+          print('Notebook validation: PASS')
+          PY
