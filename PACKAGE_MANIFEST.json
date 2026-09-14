@@ -1,0 +1,55 @@
+{
+  "package": "NISAR Polarimetric Analysis Training Toolkit",
+  "version": "1.0.0",
+  "status": "Initial public release",
+  "development_baseline": "Final pre-publication scientific-QA baseline",
+  "license": "Apache-2.0",
+  "architecture": "NISAR GCOV foundation (Modules 01-12) plus automatic LSAR Full-Pol / SSAR Compact-Pol extension (Modules 13-19), using the persisted spatial_subset.",
+  "automatic_modes": {
+    "LSAR_FULL_POL": "Modules 14-17",
+    "SSAR_COMPACT_POL": "Module 18"
+  },
+  "ram_target_gb": 16,
+  "polarimetric_modules": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "tests": [
+    "tests/test_nisar_utils.py",
+    "tests/test_architecture.py",
+    "tests/test_polarimetry.py"
+  ],
+  "notebooks": [
+    "01_Setup_and_Product_Selection.ipynb",
+    "02_Session_Check_and_Product_Orientation.ipynb",
+    "03_NISAR_L1_Product_Explorer_Metadata_First.ipynb",
+    "04_NISAR_L2_GCOV_Product_Explorer.ipynb",
+    "05_Large_NISAR_Data_Performance_and_Windowed_Access.ipynb",
+    "06_L2_GCOV_Spatial_Subsetting_AOI_LATLON_DEFAULT.ipynb",
+    "07_L2_GCOV_Quality_Control_Statistics_and_Masks.ipynb",
+    "08_L2_GCOV_Visualization_RGB_GCS.ipynb",
+    "09_Advanced_L2_GCOV_Frequency_Masks_Metadata_and_Batch_Processing.ipynb",
+    "10_L2_GCOV_GeoTIFF_Export_and_QGIS_Validation.ipynb",
+    "11_End_to_End_NISAR_L2_GCOV_Capstone.ipynb",
+    "12_Trainer_Troubleshooting_Performance_and_Session_Management.ipynb",
+    "13_Polarimetric_Mode_Discovery_and_Complex_Covariance_Inventory.ipynb",
+    "14_LSAR_FullPol_Complex_Covariance_Reconstruction_and_Validation.ipynb",
+    "15_LSAR_FullPol_Observables_and_Eigen_Analysis.ipynb",
+    "16_LSAR_FullPol_Cloude_Pottier_H_A_Alpha.ipynb",
+    "17_LSAR_FullPol_Pauli_FreemanDurden_Yamaguchi.ipynb",
+    "18_SSAR_CompactPol_Stokes_mChi_mDelta_mAlpha.ipynb",
+    "19_End_to_End_NISAR_Polarimetric_Analysis_Capstone.ipynb"
+  ],
+  "scientific_qa_highlights": [
+    "Corrected complex C3-to-Pauli T3 transformation using C32=conj(C23).",
+    "Added complex-valued unitary-transform and eigenvalue-preservation regression tests.",
+    "Module 13 reports full-covariance and polarimetric-symmetrization metadata when available.",
+    "GCOV MASK==0 invalid samples are propagated as NaN in affected Gamma0 visualization/polarimetric paths.",
+    "Clean public repository excludes Python/pytest cache artifacts and mission data products."
+  ]
+}

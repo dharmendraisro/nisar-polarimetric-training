@@ -1,0 +1,20 @@
+name: nisar-training
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - h5py
+  - xarray
+  - rasterio
+  - geopandas
+  - psutil
+  - jupyterlab
+  - ipykernel
+  - folium
+  - ipyleaflet
+  - shapely
+  - pyproj

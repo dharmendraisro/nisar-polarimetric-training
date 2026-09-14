@@ -1,0 +1,10 @@
+{
+  "description": "Optional participant GIS overlays. Leave paths empty to use only the live OpenStreetMap basemap.",
+  "layers": [],
+  "supported_formats": [
+    ".geojson",
+    ".json",
+    ".shp",
+    ".gpkg"
+  ]
+}

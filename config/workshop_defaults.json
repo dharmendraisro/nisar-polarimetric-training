@@ -1,0 +1,5 @@
+{
+  "default_frequency": "auto",
+  "output_dir": "outputs",
+  "max_plot_pixels": 4000000
+}

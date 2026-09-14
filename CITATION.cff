@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software in research, teaching, presentations, or derivative work, please cite this release."
+type: software
+title: "NISAR Polarimetric Analysis Training Toolkit"
+version: 1.0.0
+date-released: 2026-09-14
+license: Apache-2.0
+authors:
+  - family-names: "Pandey"
+    given-names: "Dharmendra Kumar"
+url: "https://github.com/dharmendraisro/nisar-polarimetric-training"
+keywords:
+  - NISAR
+  - GCOV
+  - SAR
+  - polarimetry
+  - full polarimetry
+  - compact polarimetry
+  - remote sensing
+  - synthetic aperture radar
+  - Earth observation
+abstract: "Open-source Python and Jupyter training and research toolkit for hands-on analysis of NISAR Level-2 GCOV products, including LSAR full-polarimetric and SSAR compact/hybrid-polarimetric workflows."

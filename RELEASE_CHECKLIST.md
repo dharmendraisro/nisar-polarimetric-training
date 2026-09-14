@@ -1,0 +1,28 @@
+# v1.0.0 Public Release Checklist
+
+- [x] Clean public repository structure
+- [x] Apache-2.0 license
+- [x] Independent-project disclaimer
+- [x] README
+- [x] CITATION.cff
+- [x] CONTRIBUTING.md
+- [x] CODE_OF_CONDUCT.md
+- [x] SECURITY.md
+- [x] SUPPORT.md
+- [x] CHANGELOG.md
+- [x] GitHub issue templates
+- [x] Pull request template
+- [x] GitHub Actions test workflow
+- [x] Data/reproducibility policy
+- [x] Scientific validation/limitations documentation
+- [x] 19 notebooks moved under `notebooks/`
+- [x] Historical test filename cleaned up
+- [x] Internal development numbering removed from public release metadata
+- [ ] Replace `<YOUR-GITHUB-USERNAME>` in `CITATION.cff`
+- [ ] Confirm personal/IP clearance before public publication
+- [ ] Create GitHub repository
+- [ ] Push `main`
+- [ ] Configure repository topics and description
+- [ ] Enable Dependabot/security features
+- [ ] Create GitHub Release `v1.0.0`
+- [ ] Optionally archive the release with Zenodo and add DOI to `CITATION.cff`
