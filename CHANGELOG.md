@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.1.0] — 2026-09-15
+
+### Large-scene processing and robustness update
+
+- Validated the training workflows across Dual-Pol, Full-Pol, and Compact-Pol paths.
+- Corrected the missing NumPy import in Module 07.
+- Corrected VVVV/VHVH masking behavior in Module 08.
+- Revised Module 15 for memory-conscious large-AOI Full-Pol processing.
+- Revised Module 16 for tile-wise Cloude–Pottier H/A/alpha processing.
+- Revised Module 17 for memory-conscious Pauli, Freeman–Durden and Yamaguchi-4 processing.
+- Improved handling of Yamaguchi volume-model outputs.
+- Improved RGB visualization with robust percentile stretching and explicit [0,1] clipping.
+- Preserved complex covariance handling and the established C3 → standard C3 → Pauli T3 scientific workflow.
+- Retained full-resolution quantitative processing while separating visualization scaling from physical products.
+
 ## [1.0.0] — 2026-09-14
 
 ### Initial public release

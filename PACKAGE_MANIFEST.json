@@ -1,13 +1,13 @@
 {
   "package": "NISAR Polarimetric Analysis Training Toolkit",
-  "version": "1.0.0",
-  "status": "Initial public release",
-  "development_baseline": "Final pre-publication scientific-QA baseline",
+  "version": "1.1.0",
+  "status": "Public release",
   "license": "Apache-2.0",
   "architecture": "NISAR GCOV foundation (Modules 01-12) plus automatic LSAR Full-Pol / SSAR Compact-Pol extension (Modules 13-19), using the persisted spatial_subset.",
   "automatic_modes": {
     "LSAR_FULL_POL": "Modules 14-17",
-    "SSAR_COMPACT_POL": "Module 18"
+    "SSAR_COMPACT_POL": "Module 18",
+    "DUAL_POL": "Core GCOV workflow / Modules 01-12"
   },
   "ram_target_gb": 16,
   "polarimetric_modules": [
@@ -50,6 +50,10 @@
     "Added complex-valued unitary-transform and eigenvalue-preservation regression tests.",
     "Module 13 reports full-covariance and polarimetric-symmetrization metadata when available.",
     "GCOV MASK==0 invalid samples are propagated as NaN in affected Gamma0 visualization/polarimetric paths.",
+    "Modules 07 and 08 include corrected quality-control imports and VVVV/VHVH masking behavior.",
+    "Modules 15-17 use memory-conscious processing for large LSAR Full-Pol areas of interest.",
+    "Module 16 performs Cloude-Pottier H/A/alpha analysis in a tile-wise workflow.",
+    "Module 17 handles Yamaguchi volume-model outputs robustly and uses bounded RGB display scaling.",
     "Clean public repository excludes Python/pytest cache artifacts and mission data products."
   ]
 }

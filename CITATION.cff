@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "If you use this software in research, teaching, presentations, or derivative work, please cite this release."
 type: software
 title: "NISAR Polarimetric Analysis Training Toolkit"
-version: 1.0.0
-date-released: 2026-09-14
+version: 1.1.0
+date-released: 2026-09-15
 license: Apache-2.0
 authors:
   - family-names: "Pandey"
