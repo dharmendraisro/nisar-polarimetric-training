@@ -1,10 +1,10 @@
 # NISAR Polarimetric Analysis Training Toolkit
 
-**Version 1.0.0 — Initial Public Release**
+**Version 1.1.0 — Public Release**
 
 Open-source Python/Jupyter training and research toolkit for hands-on analysis of **NISAR Level-2 GCOV** products, with workflows for both **LSAR full polarimetry** and **SSAR compact/hybrid polarimetry**.
 
-[![Release](https://img.shields.io/badge/release-v1.0.0-blue.svg)](https://github.com/)
+[![Release](https://img.shields.io/badge/release-v1.1.0-blue.svg)](https://github.com/)
 [![License](https://img.shields.io/badge/license-Apache--2.0-green.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.12-blue.svg)](environment.yml)
 
@@ -14,7 +14,7 @@ Open-source Python/Jupyter training and research toolkit for hands-on analysis o
 
 The toolkit provides a reproducible, notebook-based progression from NISAR GCOV product discovery through spatial subsetting, quality control, visualization, GIS export, and polarimetric analysis.
 
-The public v1.0.0 release is based on a scientifically reviewed pre-publication development baseline. The implementation is supported by automated regression tests and notebook/static audits. Product-specific validation against representative real NISAR products remains an important part of continued community validation.
+This public release is supported by automated regression tests, notebook/static audits, and end-to-end execution across the Full-Pol, Compact-Pol, and Dual-Pol training paths. Modules 07, 08, and 15–17 include corrections and robustness improvements identified during validation, including memory-conscious processing for large LSAR Full-Pol areas of interest.
 
 ## Scientific workflow
 
@@ -44,6 +44,15 @@ NISAR L2 GCOV HDF5
                     └── m-chi / m-delta / m-alpha
 ```
 
+## What is improved in v1.1.0
+
+- Corrected the missing NumPy import in Module 07.
+- Corrected VVVV/VHVH quality-control masking behavior in Module 08.
+- Revised Modules 15–17 for memory-conscious processing of large LSAR Full-Pol AOIs.
+- Added tile-wise Cloude–Pottier H/A/alpha processing for large scenes.
+- Improved Pauli, Freeman–Durden and Yamaguchi-4 robustness and visualization.
+- Preserved the underlying polarimetric mathematics and quantitative output products.
+
 ## Modules
 
 | Modules | Purpose |
@@ -69,7 +78,7 @@ NISAR L2 GCOV HDF5
 
 - **LSAR:** full polarimetry is treated as HH/HV/VH/VV.
 - **SSAR:** compact/hybrid polarimetry is treated as RH/RV.
-- The polarimetric modules consume the persisted v1.0.0 workflow spatial subset rather than introducing a second participant-facing AOI workflow.
+- The polarimetric modules consume the persisted workflow spatial subset rather than introducing a second participant-facing AOI workflow.
 - Complex off-diagonal covariance terms are retained as complex quantities; they are not replaced by magnitudes.
 - The standard C3 → Pauli T3 transformation is implemented as a unitary basis transformation with the complex-conjugate relationship required for Hermitian covariance matrices.
 

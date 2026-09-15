@@ -54,7 +54,7 @@ if errors:
     for e in errors: print(" -",e)
     raise SystemExit(1)
 print("STATIC INTEGRATION AUDIT: PASS")
-print("Package version : v1.0.0")
+print("Package version : v1.1.0")
 print("Python modules  :",len(list(U.glob("*.py"))))
 print("Notebooks found :",len(CANONICAL_NOTEBOOKS))
 print("Core notebooks  : 12")

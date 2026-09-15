@@ -1,4 +1,4 @@
-# v1.0.0 Public Release Checklist
+# v1.1.0 Public Release Checklist
 
 - [x] Clean public repository structure
 - [x] Apache-2.0 license
@@ -20,9 +20,10 @@
 - [x] Internal development numbering removed from public release metadata
 - [ ] Replace `<YOUR-GITHUB-USERNAME>` in `CITATION.cff`
 - [ ] Confirm personal/IP clearance before public publication
-- [ ] Create GitHub repository
-- [ ] Push `main`
+- [x] Existing public repository retained as the v1.0.0 historical baseline
+- [ ] Create release branch for v1.1.0
+- [ ] Push release branch and open pull request
 - [ ] Configure repository topics and description
 - [ ] Enable Dependabot/security features
-- [ ] Create GitHub Release `v1.0.0`
+- [ ] Create GitHub Release `v1.1.0`
 - [ ] Optionally archive the release with Zenodo and add DOI to `CITATION.cff`
