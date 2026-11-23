@@ -1,10 +1,12 @@
 # NISAR Polarimetric Analysis Training Toolkit
 
-**Version 1.1.0 — Public Release**
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24458160.svg)](https://doi.org/10.5281/zenodo.24458160)
+
+**Version 1.1.1 – Public Release**
 
 Open-source Python/Jupyter training and research toolkit for hands-on analysis of **NISAR Level-2 GCOV** products, with workflows for both **LSAR full polarimetry** and **SSAR compact/hybrid polarimetry**.
 
-[![Release](https://img.shields.io/badge/release-v1.1.0-blue.svg)](https://github.com/)
+[![Release](https://img.shields.io/badge/release-v1.1.1-blue.svg)](https://github.com/dharmendraisro/nisar-polarimetric-training/releases/latest)
 [![License](https://img.shields.io/badge/license-Apache--2.0-green.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.12-blue.svg)](environment.yml)
 
