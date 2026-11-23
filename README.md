@@ -186,3 +186,13 @@ Third-party dependencies and materials remain under their respective licenses.
 This project is developed and maintained independently by the author in a personal capacity. It is not an official product, endorsement, training package, or representation of the author's employer or of NASA, ISRO, SAC, JPL, ASF, the NISAR mission, or any other organization.
 
 Users are responsible for validating scientific results and for complying with the terms applicable to any external datasets or materials they use.
+
+
+### 💬 Join the NISAR Research Community
+
+Have you used this toolkit for NISAR polarimetric analysis?
+
+Share your research applications, experience and suggestions in our GitHub Discussions.
+
+**[Share Your Experience & Feedback](https://github.com/dharmendraisro/nisar-polarimetric-training/discussions/2)**
+
