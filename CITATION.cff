@@ -4,7 +4,7 @@ type: software
 title: "NISAR Polarimetric Analysis Training Toolkit"
 version: 1.1.1
 date-released: 2026-11-23
-DOI: "10.5281/zenodo.24458160"
+doi: "10.5281/zenodo.24458160"
 license: Apache-2.0
 authors:
   - family-names: "Pandey"
