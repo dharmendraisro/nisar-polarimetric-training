@@ -171,20 +171,21 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request.
 
 
 
+
 ## Citation
 
-If you use this toolkit in research publications, academic projects, teaching, presentations, or derivative scientific work, please cite the software.
+If you use this toolkit in research publications, academic projects, teaching, presentations, or derivative scientific work, please cite the specific software release.
 
 **Suggested citation:**
 
-Pandey, D. K. (2026). *NISAR Polarimetric Analysis Training Toolkit* (Version 1.1.0) [Computer software]. GitHub.
+Pandey, D. K. (2026). *NISAR Polarimetric Analysis Training Toolkit* (Version 1.1.1) [Computer software]. Zenodo.
 
-https://github.com/dharmendraisro/nisar-polarimetric-training
+https://doi.org/10.5281/zenodo.24458160
 
 **Citation formats:**
 - Use GitHub's "Cite this repository" option for available citation formats.
 - Please cite the specific software version used in your research.
-- A permanent DOI will be provided following Zenodo archival.
+- Permanent DOI: https://doi.org/10.5281/zenodo.24458160
 
 Please acknowledge the use of this open-source toolkit in your research publications and presentations.
 
